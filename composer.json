@@ -19,13 +19,17 @@
         }
     },
     "require": {
-        "php": "^8.0",
-        "illuminate/support": "^9.0",
-        "orchestra/contracts": "^7.0",
+        "php": "^8.1 || ^8.2",
+        "illuminate/support": "^10.0",
+        "orchestra/contracts": "^8.0",
         "statamic/stringy": "^3.1"
     },
     "require-dev": {
-        "orchestra/testbench": "^7.1"
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "conflict": {
+        "illuminate/support": "<10.0"
     },
     "replace": {
         "orchestra/support-core": "self.version",
@@ -34,11 +38,12 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "7.0-dev"
+            "dev-master": "8.0-dev"
         }
     },
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
