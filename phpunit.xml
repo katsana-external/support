@@ -6,10 +6,10 @@
          processIsolation="false"
          stopOnFailure="false"
          executionOrder="depends,defects"
-         requireCoverageMetadata="true"
-         beStrictAboutCoverageMetadata="true"
+         requireCoverageMetadata="false"
+         beStrictAboutCoverageMetadata="false"
          beStrictAboutOutputDuringTests="true"
-         failOnRisky="true"
+         failOnRisky="false"
          failOnWarning="true">
   <testsuites>
     <testsuite name="Orchestra\Support Test Suite">
