@@ -2,7 +2,13 @@
     "name": "orchestra/support",
     "description": "Support Component for Orchestra Platform",
     "homepage": "http://orchestraplatform.com/docs/latest/components/support/",
-    "keywords": ["orchestra-platform", "orchestral", "laravel", "validator", "utilities"],
+    "keywords": [
+        "orchestra-platform",
+        "orchestral",
+        "laravel",
+        "validator",
+        "utilities"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -13,15 +19,15 @@
     ],
     "autoload": {
         "psr-4": {
-            "Orchestra\\Support\\Facades\\" : "src/Facades/",
-            "Orchestra\\Support\\Providers\\" : "src/Providers/",
-            "Orchestra\\Support\\" : "src/Support/"
+            "Orchestra\\Support\\Facades\\": "src/Facades/",
+            "Orchestra\\Support\\Providers\\": "src/Providers/",
+            "Orchestra\\Support\\": "src/Support/"
         }
     },
     "require": {
         "php": "^8.0",
-        "illuminate/support": "^9.0",
-        "orchestra/contracts": "^7.0",
+        "illuminate/support": "^9.0 || ^10.0",
+        "orchestra/contracts": "*",
         "statamic/stringy": "^3.1"
     },
     "require-dev": {
